@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get 'sales/new'
 
+  get 'sales/done'
+
   post 'sales/create'
 
   post 'sales', to: 'sales#create'

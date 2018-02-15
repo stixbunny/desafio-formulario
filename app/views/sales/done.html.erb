@@ -1,0 +1,21 @@
+<h1><%= notice %></h1>
+<% if @sale != nil %>
+<table>
+  <th>COD</th>
+  <th>Detalle</th>
+  <th>Categoria</th>
+  <th>Valor</th>
+  <th>Descuento</th>
+  <th>IVA</th>
+  <th>Total</th>
+  <tr>
+    <td><%= @sale.cod %></td>
+    <td><%= @sale.detail %></td>
+    <td><%= @sale.category %></td>
+    <td><%= @sale.value %></td>
+    <td><%= @sale.discount %></td>
+    <td><%= @sale.tax %></td>
+    <td><%= @sale.total %></td>
+  </tr>
+</table>
+<% end %>
