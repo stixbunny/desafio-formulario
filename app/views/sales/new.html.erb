@@ -1,0 +1,21 @@
+<h1>Sales#new</h1>
+<p>Find me in app/views/sales/new.html.erb</p>
+
+<%= form_with model: @thesale, local: true do |f| %>
+  <%= f.label :detail %>
+  <%= f.text_area :detail, id: :detail %>
+  <br>
+  <%= f.label :category %>
+  <%= f.text_field :category, id: :category %>
+  <br>
+  <%= f.label :value %>
+  <%= f.number_field :value, id: :value %>
+  <br>
+  <%= f.label :discount %>
+  <%= f.number_field :discount, id: :discount %>
+  <br>
+  <%= label_tag '¿Exento IVA?' %>
+  <%= check_box_tag 'iva' %>
+  <br>
+  <%= f.submit "Enviar" %>
+<% end %>
